@@ -1,3 +1,5 @@
+# Kevin Nguyen's password encoder
+
 def encode(password):
     encoded_pass = ''
 
