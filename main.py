@@ -7,7 +7,7 @@ def encode(password):
         i = int(i)
         i += 3
 
-        if i > 10:
+        if i >= 10:
             i -= 10
 
         encoded_pass += str(i)
@@ -31,7 +31,6 @@ def main():
 
             encoded_password = encode(original_password)
 
-            print(encoded_password)
 
             print("Your password has been encoded and stored!\n")
 
