@@ -14,6 +14,10 @@ def encode(password):
 
     return encoded_pass
 
+#Raiden Saunders' decoder
+def decode(password): #just returns the original password ~ Raiden Saunders
+    return password
+
 def main():
     run_menu = True
 
@@ -34,7 +38,9 @@ def main():
 
             print("Your password has been encoded and stored!\n")
 
-        elif user_input == 2: # PARTNER: Add your code here and create decoder function above! The decoded password is already stored in original_password.
+        elif user_input == 2: # Used decode funtion below to return the original password ~ Raiden Saunders
+            original_pass = decode(original_password)
+            print(f'The encoded pawword is {encoded_password}, and the original password is {original_pass}.')
             pass
 
 
